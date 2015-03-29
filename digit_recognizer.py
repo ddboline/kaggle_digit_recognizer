@@ -32,7 +32,7 @@ def digit_recognizer_submission():
 
     x_train = train_samp.iloc[:,1:]
     y_train = train_samp.iloc[:,0]
-    
+
     knn = neighbors.KNeighborsClassifier()
     print knn.fit(x_train, y_train)
 
@@ -74,8 +74,7 @@ def compare_algos():
                 'LDA': LDA(),
                 'QDA': QDA(),
                 'GMM': GMM(),
-                'SVC2': SVC(),
-              }
+                'SVC2': SVC(),}
 
     classifier_list = classifier_dict.values()
     classifier_scores = {}
